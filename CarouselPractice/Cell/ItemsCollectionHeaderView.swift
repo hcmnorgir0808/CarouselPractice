@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CarouselHeaderView: UICollectionReusableView {
+class ItemsCollectionHeaderView: UICollectionReusableView {
 
     @IBOutlet weak var titleLabel: UILabel!
     

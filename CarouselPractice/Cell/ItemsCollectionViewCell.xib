@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarouselItemsViewCell" id="gTV-IL-0wX" customClass="CarouselItemsViewCell" customModule="CarouselPractice" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemsCollectionViewCell" id="gTV-IL-0wX" customClass="ItemsCollectionViewCell" customModule="CarouselPractice" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="418" height="204"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -31,10 +31,10 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="8nG-t9-fXn" secondAttribute="bottom" id="8Ix-5g-utB"/>
-                <constraint firstItem="8nG-t9-fXn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qh9-ap-eTZ"/>
-                <constraint firstItem="8nG-t9-fXn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sz5-PI-WfC"/>
-                <constraint firstAttribute="trailing" secondItem="8nG-t9-fXn" secondAttribute="trailing" id="yef-gq-gna"/>
+                <constraint firstAttribute="bottom" secondItem="8nG-t9-fXn" secondAttribute="bottom" id="JDu-ho-hRi"/>
+                <constraint firstItem="8nG-t9-fXn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aUI-XA-Wr6"/>
+                <constraint firstAttribute="trailing" secondItem="8nG-t9-fXn" secondAttribute="trailing" id="bd2-Be-rtC"/>
+                <constraint firstItem="8nG-t9-fXn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cvf-jD-bru"/>
             </constraints>
             <size key="customSize" width="418" height="204"/>
             <connections>
