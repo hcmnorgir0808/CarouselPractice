@@ -14,11 +14,11 @@ enum Section: Int, CaseIterable {
     var items: Int {
         switch self {
         case .carousel: return 1
-        case .grid: return 1
+        case .grid: return 21
         }
     }
     
-    var title: String {
+    var headerTitle: String {
         switch self {
         case .carousel: return "カルーセル"
         case .grid: return "グリッド"

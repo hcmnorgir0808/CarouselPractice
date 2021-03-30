@@ -10,12 +10,10 @@ import UIKit
 class ItemsCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    private var section: Section?
-    
+        
     private static var cell: ItemsCollectionViewCell = {
         UINib(nibName: ItemsCollectionViewCell.self.className, bundle: nil)
-            .instantiate(withOwner: nil, options: nil)[0] as! ItemsCollectionViewCell
+            .instantiate(withOwner: nil, options: nil).first as! ItemsCollectionViewCell
     }()
     
     override func awakeFromNib() {
@@ -31,30 +29,11 @@ class ItemsCollectionViewCell: UICollectionViewCell {
         
         collectionView.register(with: ItemCollectionViewCell.self)
     }
-    
-    func set(section: Section) {
-        self.section = section
-    }
-    
-    // setメソッド実行後にlayoutIfNeededを使って描画して？layoutFittingCompressedSizeで高さを計算したい
-    static func height(width: CGFloat, section: Section) -> CGFloat {
-        cell.frame.size = CGSize(width: width, height: .greatestFiniteMagnitude)
-        cell.set(section: section)
-        
-        cell.setNeedsLayout()
-        cell.layoutIfNeeded()
-        
-        return cell.systemLayoutSizeFitting(
-            UIView.layoutFittingCompressedSize,
-            withHorizontalFittingPriority: .required,
-            verticalFittingPriority: .fittingSizeLevel
-        ).height
-    }
 }
 
 extension ItemsCollectionViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -67,12 +46,7 @@ extension ItemsCollectionViewCell: UICollectionViewDataSource {
 
 extension ItemsCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        guard let section = section else { return .zero }
-        switch section {
-        case .carousel: return CGSize(width: 150, height: 150)
-        case .grid:
-            let width = (collectionView.frame.width - 21) / 3
-            return CGSize(width: width, height: width)
-        }
+        let width = (collectionView.frame.width - 21) / 3
+        return CGSize(width: width, height: width)
     }
 }

@@ -21,6 +21,7 @@
 		C670BF09260F41CB00F1E44A /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670BF08260F41CB00F1E44A /* NSObject+.swift */; };
 		C670BF0E260F492C00F1E44A /* ItemsCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670BF0C260F492C00F1E44A /* ItemsCollectionHeaderView.swift */; };
 		C670BF0F260F492C00F1E44A /* ItemsCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C670BF0D260F492C00F1E44A /* ItemsCollectionHeaderView.xib */; };
+		C6FDA4F42612252E002F17B9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FDA4F32612252E002F17B9 /* Logger.swift */; };
 		C6FDB5D0260F7E0A00A69618 /* CarouselViewSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FDB5CF260F7E0900A69618 /* CarouselViewSectionType.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		C670BF08260F41CB00F1E44A /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		C670BF0C260F492C00F1E44A /* ItemsCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionHeaderView.swift; sourceTree = "<group>"; };
 		C670BF0D260F492C00F1E44A /* ItemsCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsCollectionHeaderView.xib; sourceTree = "<group>"; };
+		C6FDA4F32612252E002F17B9 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		C6FDB5CF260F7E0900A69618 /* CarouselViewSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewSectionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				C670BEDF260F364500F1E44A /* SceneDelegate.swift */,
 				C670BEE1260F364500F1E44A /* CarouselViewController.swift */,
 				C6FDB5CF260F7E0900A69618 /* CarouselViewSectionType.swift */,
+				C6FDA4F32612252E002F17B9 /* Logger.swift */,
 				C670BF00260F3DA300F1E44A /* Cell */,
 				C670BF03260F3FDB00F1E44A /* Utils */,
 				C670BEE3260F364500F1E44A /* Main.storyboard */,
@@ -188,6 +191,7 @@
 				C670BEE2260F364500F1E44A /* CarouselViewController.swift in Sources */,
 				C670BEDE260F364500F1E44A /* AppDelegate.swift in Sources */,
 				C670BEE0260F364500F1E44A /* SceneDelegate.swift in Sources */,
+				C6FDA4F42612252E002F17B9 /* Logger.swift in Sources */,
 				C670BF09260F41CB00F1E44A /* NSObject+.swift in Sources */,
 				C670BF0E260F492C00F1E44A /* ItemsCollectionHeaderView.swift in Sources */,
 				C670BF05260F3FF000F1E44A /* UICollectionView+.swift in Sources */,
